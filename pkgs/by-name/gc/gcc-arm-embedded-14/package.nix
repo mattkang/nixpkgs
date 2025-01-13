@@ -6,6 +6,7 @@
   python39,
   libxcrypt-legacy,
   runtimeShell,
+  zstd,
 }:
 
 stdenv.mkDerivation rec {
@@ -55,6 +56,7 @@ stdenv.mkDerivation rec {
           ncurses5
           python39
           libxcrypt-legacy
+          zstd
         ]
       } "$f" || true
     done
